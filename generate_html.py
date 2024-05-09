@@ -5,21 +5,24 @@ import re
 
 
 logo_files = {
+    'Athletenpräsentation'      : '',
     'Avetana'                   : 'avetana_brighter.png',
     'Badisch Brauhaus'          : 'badisch-brauhaus_white.png',
     'Beinert & Partner'         : 'Beinert und Partner_brightened.png',
-    'Brenner Gebäudereinigung'  : 'Logo SCSB.jpg',
-    'Ford Wolf'                 : '',
+    'Brenner Gebäudereinigung'  : 'brenner_kleiner.png',
+    'Die Stadtmitte Nachtclub'  : 'Logo Stadtmitte weiss.png',
+    'Ford Wolf'                 : 'Wolf_logo15.png',
     'Freizeitlauf'              : '',
     'Hoepfner'                  : '2000px-Privatbrauerei_Hoepfner.png',
-    'Indoor-Meeting'            : 'indoor_meeting.png',
+    'Indoor Meeting'            : 'indoor_meeting.png',
     'Joggling'                  : '',
     'M&M Sports'                : 'm_und_m_sports_white.png',
     'Nussbaumer'                : 'logo-nuss_white.png',
     'Osteopathie Besse'         : '',
     'Peterstaler'               : 'peterstaler.jpg',
-    'PUMA Nitro'                : 'LOW RES 500x500-Nitro_Logo.jpg',
+    'PUMA NITRO'                : 'Puma_Nitro.png',
     'REWE'                      : 'REWE_4c_negativ.jpg',
+    'San Lucar'                 : 'sanlucar-logo.png',
     'Scholarbook'               : 'scholarbook.png',
     'Siegerehrung'              : '',
     'Sparkasse Karlsruhe'       : 'Sparkasse Karlsruhe Logo 2021 Negativ Rot.jpg',
@@ -39,12 +42,12 @@ logo_files = {
     }
 
 
-table = pd.read_csv('tabelle.csv', skiprows=2, na_filter=False)
+table = pd.read_csv('tabelle.csv', skiprows=0, na_filter=False, header = 0)
 # only keep the columns we want
 columns_to_keep = ['Lauf', 'm/w', 'Nummer', 'Buchstabe', 'Zeit', 'Pace', 'Partner']
 table = table.loc[:, columns_to_keep]
 # throw away rows in which column "Lauf" contains "NaN":
-table = table[table['Lauf'] != '']
+# table = table[table['Lauf'] != '']
 # convert values in column "Nummer" to integer
 table['Nummer'] = pd.to_numeric(table['Nummer'], errors='coerce').astype('Int64')
 # replace all 'NaN' entries with ''
@@ -82,14 +85,14 @@ html_start = '''<!DOCTYPE html>
                         </div>
                         
                         
-                        <!-- WORLD RECORD -->
+                        <!-- OLYMPIC STANDARD -->
                          <div class="align-items-center overlay" id="worldRecord">
                             <div class="row align-items-center">
                               <div class="col-md-5" style="text-align: right;">
                                 <img src="Logos/LLN_medium.png" class="img-fluid">
                               </div>
                               <div class="col-md-7" style="text-align: left;">
-                                <p class="hRecord"> World Record!</p>
+                                <p class="hRecord"> Olympic Standard!</p>
                               </div>
                             </div>
                             <canvas class="confetti" id="wrCanvas"></canvas>
@@ -147,8 +150,8 @@ html_ending = '''
                     <div style="background-color: black; height: 100vh"></div>
                 </div>
                 
-                <script type='module' src="confettiEffect.js"></script>
-                <script type='module' src="toggleAnimations.js"></script>
+                <script type='text/javascript' src="confettiEffect.js"></script>
+                <script type='text/javascript' src="toggleAnimations.js"></script>
                     
             </body>
             </html>
@@ -206,7 +209,7 @@ for index, element in table.iterrows():
     # replace ä with '&auml'
     event_sponsor = re.sub(r'ä', '&auml', event_sponsor)
     
-    if 'Hi' not in event_distance: 
+    if 'Hi' not in event_distance and event_distance != '': 
         event_distance = event_distance + 'm'
         
     

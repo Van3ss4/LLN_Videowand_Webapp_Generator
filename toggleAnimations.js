@@ -1,6 +1,3 @@
-import {initConfetti} from './confettiEffect.js';
-
-
 document.addEventListener('DOMContentLoaded', function() {
     // Define a reusable function to toggle image visibility
     function toggleImage(elementId) {
@@ -25,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 toggleImage('meetingRecord');
                 initConfetti(document.getElementById("mrCanvas"));
                 break;
-            case 'w': // 'w' => world record
+            case 'o': // 'o' => olympic standard
                 toggleImage('worldRecord');
                 initConfetti(document.getElementById("wrCanvas"));
                 break;
