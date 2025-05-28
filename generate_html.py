@@ -3,6 +3,21 @@ import pandas as pd
 from datetime import datetime
 import re
 
+def escape_german_umlauts(text):
+    replacements = {
+        'ä': '&auml;',
+        'ö': '&ouml;',
+        'ü': '&uuml;',
+        'Ä': '&Auml;',
+        'Ö': '&Ouml;',
+        'Ü': '&Uuml;',
+        'ß': '&szlig;'
+    }
+    for char, html_entity in replacements.items():
+        text = text.replace(char, html_entity)
+    return text
+
+
 
 logo_files = {
     'Athletenpräsentation'      : '',
@@ -39,6 +54,11 @@ logo_files = {
     'Siegerehrung5000W'         : 'SE_5000_W.png',
     'Siegerehrung3000HiM'       : 'SE_3000Hi_M.png',
     'Siegerehrung3000HiW'       : 'SE_3000Hi_W.png',
+    'HPP Vermögensverwaltung'   : '',
+    'wus-media'                 : '',
+    'REHA med Herxheim'         : '',
+    'Auth Kälte- & Klimatechnik': '',
+    'Sasse'                     : '',
     }
 
 
@@ -75,7 +95,7 @@ html_start = '''<!DOCTYPE html>
                         <div class="align-items-center overlay" id="meetingRecord">
                             <div class="row align-items-center">
                               <div class="col-md-5" style="text-align: right;">
-                                <img src="Logos/LLN_medium.png" class="img-fluid">
+                                <img src="Logos/LLN_medium.png" loading="lazy" class="img-fluid">
                               </div>
                               <div class="col-md-7" style="text-align: left;">
                                 <p class="hRecord"> Meeting Record!</p>
@@ -89,7 +109,7 @@ html_start = '''<!DOCTYPE html>
                          <div class="align-items-center overlay" id="worldRecord">
                             <div class="row align-items-center">
                               <div class="col-md-5" style="text-align: right;">
-                                <img src="Logos/LLN_medium.png" class="img-fluid">
+                                <img src="Logos/LLN_medium.png" loading="lazy" class="img-fluid">
                               </div>
                               <div class="col-md-7" style="text-align: left;">
                                 <p class="hRecord"> Olympic Standard!</p>
@@ -101,19 +121,19 @@ html_start = '''<!DOCTYPE html>
                         
                         <!-- ALL SPONSORS -->
                          <div class="align-items-center overlay" id="allSponsors">
-                             <img src="Einblendungen/alle_sponsoren.png" class="img-fluid">
+                             <img data-src="Einblendungen/alle_sponsoren.png" loading="lazy" class="img-fluid">
                         </div>
                         
                         
                         <!-- LGR -->
                          <div class="align-items-center overlay" id="lgr">
-                             <img src="Einblendungen/LGR.png" class="img-fluid">
+                             <img data-src="Einblendungen/LGR.png" loading="lazy" class="img-fluid">
                         </div>
                         
                         
                         <!-- PACERS IN ALL RACES -->
                          <div class="align-items-center overlay" id="pacersInAllRaces">
-                             <img src="Einblendungen/pacers_in_all_races.png" class="img-fluid">
+                             <img data-src="Einblendungen/pacers_in_all_races.png" loading="lazy" class="img-fluid">
                         </div>
                         
                 
@@ -124,10 +144,10 @@ html_start = '''<!DOCTYPE html>
                                     <h1>Lange Laufnacht</h1>
                                 </div>
                                 <div class="col">
-                                    <img class="logo" src="Logos/WAC.png">
+                                    <img class="logo" src="Logos/WAC.png" loading="lazy">
                                     </div>
                                 <div class="col">
-                                    <img class="logo" src="Logos/LLN.png">
+                                    <img class="logo" src="Logos/LLN.png" loading="lazy">
                                 </div>           
                             
                             </div>
@@ -152,6 +172,7 @@ html_ending = '''
                 
                 <script type='text/javascript' src="confettiEffect.js"></script>
                 <script type='text/javascript' src="toggleAnimations.js"></script>
+                <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
                     
             </body>
             </html>
@@ -180,7 +201,7 @@ accordion_item_template = '''  <div class="accordion-item">
                                     </button>
                                 <div id="collapse{index}" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                                     <div class="card-body d-flex justify-content-center align-items-center">
-                                        <img class="sponsoren-logo" src="{image_path}">
+                                        <img class="sponsoren-logo Sirv" data-src="{image_path}">
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +228,9 @@ for index, element in table.iterrows():
     # print(image_path)
     
     # replace ä with '&auml'
-    event_sponsor = re.sub(r'ä', '&auml', event_sponsor)
+    # event_sponsor = re.sub(r'ä', '&auml', event_sponsor)
+    event_sponsor = escape_german_umlauts(event_sponsor)
+
     
     if 'Hi' not in event_distance and event_distance != '': 
         event_distance = event_distance + 'm'
@@ -242,6 +265,9 @@ for index, element in table.iterrows():
                                                  font_size=font_size,
                                                  image_path=image_path)
     html_content += div_element
+    
+    
+
     
     
 html_content += html_ending

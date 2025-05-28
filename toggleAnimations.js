@@ -1,30 +1,38 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Define a reusable function to toggle image visibility
+
+document.addEventListener('DOMContentLoaded', function () {
+    let confettiRunning = false;
+
+    function safeInitConfetti(canvas) {
+        if (!confettiRunning) {
+            confettiRunning = true;
+            initConfetti(canvas);
+            setTimeout(() => confettiRunning = false, 5000); // prevent re-triggering
+        }
+    }
+
     function toggleImage(elementId) {
         var element = document.getElementById(elementId);
-        if (element.style.display === 'none') {
-            // Close all other images
+        if (element.style.display === 'none' || !element.style.display) {
             var allImages = document.querySelectorAll('.overlay');
             allImages.forEach(function(image) {
                 image.style.display = 'none';
             });
-            // Open the selected image
             element.style.display = 'flex';
         } else {
             element.style.display = 'none';
         }
     }
 
-    // Define keyboard shortcuts for different images
-    document.addEventListener('keydown', function(event) {
+
+    document.addEventListener('keydown', function (event) {
         switch (event.key) {
             case 'm': // 'm' => meeting record
                 toggleImage('meetingRecord');
-                initConfetti(document.getElementById("mrCanvas"));
+                safeInitConfetti(document.getElementById("mrCanvas"));
                 break;
             case 'o': // 'o' => olympic standard
                 toggleImage('worldRecord');
-                initConfetti(document.getElementById("wrCanvas"));
+                safeInitConfetti(document.getElementById("wrCanvas"));
                 break;
             case 's': // 's' => all sponsors
                 toggleImage('allSponsors');

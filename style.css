@@ -109,8 +109,11 @@ hr {
 }
 
 .sponsoren-logo {
+     height: auto;
+    width: auto;
     max-height: 50vh;
-    max-width:55vw;
+    max-width: 55vw;
+    object-fit: contain;
 }
 
 :focus {

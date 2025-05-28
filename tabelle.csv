@@ -1,62 +1,65 @@
-Lauf,m/w,Nummer,Buchstabe,Zeit,Partner,R,Pace,,Pacer,Zeit,,Kontakt,,
-1500,M,,,13:20,Stadt Karlsruhe,,4:12,,,,,,,
-1500,W,,,13:28,REWE,,4:50,,,,,,,
-1500,M,,,13:36,Badisch Brauhaus,,4:05,,,,,,,
-1500,M,,,13:44,Nussbaumer,,3:58,,,,,,,
-1500,Wm,,,13:52,Sparkasse Karlsruhe,,4:44,,,,,,,
-1500,M,,,14:00,M&M Sports,,3:57,,,,,,,
-1500,W,,,14:08,Indoor Meeting,,4:38,,,,,,,
-1500,M,,,14:16,Top4Running,,3:55,,,,,,,
-400,W,,,14:25,Trimedic,,,,,,,,,
-400,M,,,14:30,Stadt Karlsruhe,,,,,,,,,
-100,W,,,14:40,Hoepfner,,,,,,,,,
-100,M,,,14:45,Die Stadtmitte Nachtclub,,,,,,,,,
-800,W,,,14:55,Peterstaler,,2:18,,,,,,,
-800,W,,,15:01,M&M Sports,,2:14,,,,,,,
-800,W,,,15:07,Scholarbook,,2:10,,,,,,,
-800,M,,,15:13,Stadt Karlsruhe,,2:07,,,,,,,
-800,M,,,15:19,Top4Running,,2:02,,,,,,,
-800,M,,,15:25,Nussbaumer,,1:59,,,,,,,
-800,M,,,15:31,Peterstaler,,1:56,,,,,,,
-800,M,,,15:37,Trimedic,,1:55,,,,,,,
-800,M,,,15:43,Indoor Meeting,,1:54,,,,,,,
-800,W,,,15:49,San Lucar,,2:06,,,,,,,
-800,M,,,15:55,PUMA NITRO,,1:52,,,,,,,
-800,M,,,16:01,Scholarbook,,1:51,,,,,,,
-800,M,,,16:07,Ford Wolf,,1:49,,,,,,,
-800,M,,,16:13,San Lucar,,1:48,,,,,,,
-5000,M,,,16:25,Brenner Gebäudereinigung,,15:05,,,,,,,
-5000,W,,,16:45,Weingut Anselmann,,16:45,,,,,,,
-1500,M,,,17:07,Indoor Meeting,,3:49,,,,,,,
-1500,W,,,17:15,Beinert & Partner,,4:32,,,,,,,
-1500,M,,,17:23,Top4Running,,2:48,,,,,,,
-1500,M,,,17:31,Scholarbook,,3:43,,,,,,,
-1500,M,,,17:39,PUMA NITRO,,3:38,,,,,,,
-1500,W,,,17:47,M&M Sports,,4:24,,,,,,,
-1500,W,,,17:55,Hoepfner,,4:17,,,,,,,
-3000Hi,M,,,18:10,Avetana,,9:00,,,,,,,
-3000Hi,M,,,18:25,Brenner Gebäudereinigung,,8:40,,,,,,,
-3000Hi,F,,,18:40,Beinert & Partner,,10:00,,,,,,,
-1000,mu16,,,18:55,Sparkasse Karlsruhe,,,,,,,,,
-1000,wu16,,,19:05,Sparkasse Karlsruhe,,,,,,,,,
-,,,,19:20,Joggling,,,,,,,,,
-,,,,19:25,Athletenpräsentation,,,,,,,,,
-800,W,,,19:40,Brenner Gebäudereinigung,,2:02,,,,,,,
-800,M,,,19:48,Beinert & Partner,,1:46,,,,,,,
-800,W,,,19:56,PUMA NITRO,,2:00,,,,,,,
-800,M,,,20:04,Die Stadtmitte Nachtclub,,1:44,,,,,,,
-3000Hi,W,,,20:20,Avetana,,9:40,,,,,,,
-3000Hi,M,,,20:35,Top4Running,,8:20,,,,,,,
-800,,,,20:45,Siegerehrung,,,,,,,,,
-1500,W,,,20:50,Stadt Karlsruhe,,4:05,,,,,,,
-1500,M,,,21:00,Indoor Meeting,,3:36,,,,,,,
-1500,M,,,21:10,PUMA NITRO,,3:34,,,,,,,
-3000Hi,,,,21:15,Siegerehrung,,,,,,,,,
-5000,W,,,21:25,Beinert & Partner,,15:00,,,,,,,
-1500,,,,21:45,Siegerehrung,,,,,,,,,
-5000,M,,,21:50,Scholarbook,,13:20,,,,,,,
-1500,,,,22:10,Siegerehrung,,,,,,,,,
-5000,W,,,22:15,PUMA NITRO,,16:00,,,,,,,
-5000,M,,,22:35,Stadt Karlsruhe,,14:00,,,,,,,
-5000,,,,22:55,Siegerehrung,,,,,,,,,
-5000,M,,,23:00,Brenner Gebäudereinigung,,14:35,,,,,,,
+Lauf,m/w,Nummer,Buchstabe,Zeit,Pace,Partner
+800,M,1,,13:00,2:06,Hoepfner
+800,M,2,,13:05,2:03,Ford Wolf
+800,M,3,,13:10,2:01,HPP Vermögensverwaltung
+800,M,4,,13:15,2:00,San Lucar
+800,M,5,,13:20,1:58,wus-media
+800,M,6,,13:25,1:58,Peterstaler
+800,M,7,,13:30,1:55,Nussbaumer
+800,F,8,,13:35,2:20,REHA med Herxheim
+800,M,9,,13:40,1:55,Brenner Gebäudereinigung
+800,F,10,,13:45,2:17,Sparkasse Karlsruhe
+800,M,11,,13:50,1:53,Scholarbook
+800,F,12,,13:55,2:15,Indoor Meeting
+800,M,13,,14:00,1:53,Top4Running
+800,F,14,,14:05,2:14,Beinert & Partner
+800,M,15,,14:10,1:50,PUMA NITRO
+800,F,16,,14:15,2:12,Stadt Karlsruhe
+800,M,17,,14:20,1:50,Hoepfner
+800,F,18,,14:25,2:09,Ford Wolf
+800,M,19,,14:30,1:48,HPP Vermögensverwaltung
+800,F,20,,14:35,2:07,San Lucar
+800,M,21,,14:40,1:48,wus-media
+800,F,22,,14:45,2:04,Peterstaler
+1000,F,23,,14:55,,Sparkasse Karlsruhe
+1000,M,24,,15:05,,Sparkasse Karlsruhe
+1500,M,25,,15:14,4:14,Nussbaumer
+1500,M,26,,15:21,4:08,REHA med Herxheim
+1500,M,27,,15:28,4:00,Auth Kälte- & Klimatechnik
+1500,F,28,,15:35,4:47,Scholarbook
+1500,M,29,,15:42,3:56,Indoor Meeting
+1500,F,30,,15:49,4:42,Top4Running
+1500,M,31,,15:56,3:54,Beinert & Partner
+1500,F,32,,16:03,4:38,PUMA NITRO
+1500,M,33,,16:10,3:52,Stadt Karlsruhe
+1500,F,34,,16:17,4:35,HPP Vermögensverwaltung
+1500,M,35,,16:24,3:50,Sasse
+1500,F,36,,16:31,4:31,Scholarbook
+1500,M,37,,16:38,3:47,Indoor Meeting
+1500,F,38,,16:45,4:26,Top4Running
+1500,M,39,,16:52,3:45,Beinert & Partner
+1500,F,40,,16:59,4:22,PUMA NITRO
+1500,M,41,,17:06,3:43,Stadt Karlsruhe
+1500,F,42,,17:13,4:16,Scholarbook
+3000Hi,M,43,,17:25,8:50,Top4Running
+3000Hi,M,44,,17:37,10:15,Beinert & Partner
+3000Hi,F,45,,17:50,,PUMA NITRO
+,,46,,18:10,,Athletenpräsentation
+800,F,47,,18:25,2:00,Stadt Karlsruhe
+800,M,48,,18:38,1:46,REHA med Herxheim
+800,M,49,,18:45,1:44,HPP Vermögensverwaltung
+3000Hi,F,50,,18:55,9:20,Sparkasse Karlsruhe
+3000Hi,M,51,,19:15,8:18,PUMA NITRO
+1500,F,52,,19:35,4:07,Indoor Meeting
+1500,M,53,,19:47,3:37,Brenner Gebäudereinigung
+1500,M,54,,19:55,3:34,Scholarbook
+5000,F,55,,20:05,15:10,Beinert & Partner
+5000,M,56,,20:30,13:30,Top4Running
+5000,F,57,,20:50,15:50,Ford Wolf
+5000,M,58,,21:10,14:00,Stadt Karlsruhe
+5000,F,59,,21:28,16:20,PUMA NITRO
+5000,M,60,,21:49,14:20,Indoor Meeting
+5000,F,61,,22:08,17:00,Hoepfner
+5000,M,62,,22:30,14:40,Beinert & Partner
+5000,M,63,,22:49,14:50,PUMA NITRO
+5000,M,64,,23:09,15:10,Stadt Karlsruhe
