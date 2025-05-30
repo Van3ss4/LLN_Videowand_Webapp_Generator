@@ -54,11 +54,11 @@ logo_files = {
     'Siegerehrung5000W'         : 'SE_5000_W.png',
     'Siegerehrung3000HiM'       : 'SE_3000Hi_M.png',
     'Siegerehrung3000HiW'       : 'SE_3000Hi_W.png',
-    'HPP Vermögensverwaltung'   : '',
-    'wus-media'                 : '',
-    'REHA med Herxheim'         : '',
-    'Auth Kälte- & Klimatechnik': '',
-    'Sasse'                     : '',
+    'HPP Vermögensverwaltung'   : 'pohlig.svg',
+    'wus-media'                 : 'wus_media.png',
+    'REHA med Herxheim'         : 'reha_med.png',
+    'Auth Kälte- & Klimatechnik': 'logo_auth.jpg',
+    'Sasse'                     : 'sasse.png',
     }
 
 
@@ -121,19 +121,19 @@ html_start = '''<!DOCTYPE html>
                         
                         <!-- ALL SPONSORS -->
                          <div class="align-items-center overlay" id="allSponsors">
-                             <img data-src="Einblendungen/alle_sponsoren.png" loading="lazy" class="img-fluid">
+                             <img src="Einblendungen/alle_sponsoren.png" class="img-fluid">
                         </div>
                         
                         
                         <!-- LGR -->
                          <div class="align-items-center overlay" id="lgr">
-                             <img data-src="Einblendungen/LGR.png" loading="lazy" class="img-fluid">
+                             <img src="Einblendungen/LGR.png" class="img-fluid">
                         </div>
                         
                         
                         <!-- PACERS IN ALL RACES -->
                          <div class="align-items-center overlay" id="pacersInAllRaces">
-                             <img data-src="Einblendungen/pacers_in_all_races.png" loading="lazy" class="img-fluid">
+                             <img src="Einblendungen/pacers_in_all_races.png" class="img-fluid">
                         </div>
                         
                 

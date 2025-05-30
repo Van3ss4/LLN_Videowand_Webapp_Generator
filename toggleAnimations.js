@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!confettiRunning) {
             confettiRunning = true;
             initConfetti(canvas);
-            setTimeout(() => confettiRunning = false, 5000); // prevent re-triggering
+            setTimeout(() => confettiRunning = false, 3000); // prevent re-triggering
         }
     }
 
