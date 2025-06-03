@@ -25,10 +25,10 @@
 	![Olympic Standard](attest/screenshot_olympic_standard.png)
 	
 	s - overview with all sponsors
-	![Sponsors](alle_sponsoren.png)
+	![Sponsors](Einblendungen/alle_sponsoren.png)
 	
 	l - LGR advertisement
-	![LGR](LGR.png]
+	![LGR](Einblendungen/LGR.png)
 	
 	p - 'pacers in all races'
 	![Pacers](Einblendungen/pacers_in_all_races.png)
