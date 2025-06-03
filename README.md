@@ -6,7 +6,7 @@
 
 # How to use
 
-# opening the Webapp 
+## Opening the Webapp 
 
 	The main file is "index.html". Open it to view the Webapp in any Browser.
 	
@@ -14,7 +14,7 @@
 	
 	![Event Uncollapsed](assets/screenshot_uncollapsed.png)
 
-## use keyboard shortcuts
+## Using Keyboard Shortcuts
 
 	press the keys once to show the page and a second time to hide it again
 
@@ -37,7 +37,7 @@
 	![Thunderstorm](assets/screenshot_thunderstorm.png)
 
 
-## replace images or make changes to the timetable
+## Replacing Images or Making Changes to the Timetable
 
 	The project folder contains Images, Logos (LLN, WAC) and Sponsors (Logos as well) folders.
 	If you want to change a main logo of the Webapps header (LLN, WAC) replace that existing 
