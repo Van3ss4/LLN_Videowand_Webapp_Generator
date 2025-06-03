@@ -136,6 +136,11 @@ html_start = '''<!DOCTYPE html>
                              <img src="Einblendungen/pacers_in_all_races.png" class="img-fluid">
                         </div>
                         
+                        <!-- THUNDERSTORM -->
+                         <div class="align-items-center overlay" id="thunderstorm">
+                             <img src="Einblendungen/thunderstorm.png" class="img-fluid">
+                        </div>
+                        
                 
                         <!-- HEADER -->
                         <div class="sticky-header">

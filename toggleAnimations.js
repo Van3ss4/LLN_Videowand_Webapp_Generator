@@ -43,6 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'p': // 'p' => pacersInAllRaces
                 toggleImage('pacersInAllRaces');
                 break;
+            case "t": // 't' => thunderstorm
+                toggleImage('thunderstorm')
+                break;
             default:
                 break;
         }
