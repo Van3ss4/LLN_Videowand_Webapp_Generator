@@ -1,27 +1,43 @@
-## SUMMARY 
+# SUMMARY 
 
 	This project is used to create the Webapp for the LLN Videoscreen.
 	It's featuring a timetable with collapsible accordions. Klick on an event to un-collapse 
 	it and show the sponsors Logo.
 
-## How to use
+# How to use
 
 # opening the Webapp 
 
 	The main file is "index.html". Open it to view the Webapp in any Browser.
+	
+	![Main View](assets/screenshot_main_screen]
+	
+	![Event Uncollapsed](assets/screenshot_uncollapsed.png)
 
-# use keyboard shortcuts
+## use keyboard shortcuts
 
 	press the keys once to show the page and a second time to hide it again
 
 	m - meeting record
+	![Meeting Record](assets/screenshot_meetingrecord.png)
+	
 	o - olympic standard
+	![Olympic Standard](attest/screenshot_olympic_standard.png)
+	
 	s - overview with all sponsors
+	![Sponsors](alle_sponsoren.png)
+	
 	l - LGR advertisement
+	![LGR](LGR.png]
+	
 	p - 'pacers in all races'
+	![Pacers](Einblendungen/pacers_in_all_races.png)
+	
+	t - thunderstorm (due to bad weather forecast in 2025)
+	![Thunderstorm](assets/screenshot_thunderstorm.png)
 
 
-# replace images or make changes to the timetable
+## replace images or make changes to the timetable
 
 	The project folder contains Images, Logos (LLN, WAC) and Sponsors (Logos as well) folders.
 	If you want to change a main logo of the Webapps header (LLN, WAC) replace that existing 
@@ -34,7 +50,7 @@
 	The table needs to be in .csv format with "," as delimiters.
 	You can create an excel table and export it in the desired format.
 
-# Adding new Sponsors
+## Adding new Sponsors
 
 	Open the generate_html.py file.
 	Find the dictionary logo_files{}.
